@@ -1,5 +1,7 @@
 {
   "name": "CustomerReview",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

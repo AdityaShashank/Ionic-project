@@ -1,0 +1,17 @@
+    <ion-content>
+      <ion-card>
+        <ion-grid>
+            <ion-row>
+            <ion-col> 
+        <ion-list>
+            <ion-item *ngFor="let entry of form">
+              <ion-label>{{entry.val}}</ion-label>
+              <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+            </ion-item>
+          </ion-list>
+            </ion-col>
+            </ion-row>
+        </ion-grid>
+        </ion-card>
+        </ion-content>
+       
