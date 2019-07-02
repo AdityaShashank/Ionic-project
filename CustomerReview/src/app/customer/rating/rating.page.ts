@@ -18,7 +18,6 @@ export class RatingPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
   }
 
 }

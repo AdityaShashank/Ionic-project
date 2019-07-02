@@ -24,9 +24,10 @@ const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: '/home',
+        redirectTo: '/customer/tabs',
         pathMatch: 'full',
-    }
+    },  { path: 'thanks', loadChildren: './thanks/thanks.module#ThanksPageModule' }
+
 ];
 
 
