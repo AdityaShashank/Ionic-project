@@ -1,0 +1,22 @@
+{
+  "name": "customer",
+  "version": "1.0.0",
+  "description": "customer details",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamshaunjp/mongodb-playlist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/iamshaunjp/mongodb-playlist#readme",
+  "dependencies": {
+    "mocha": "^6.1.4",
+    "mongodb": "^3.2.7",
+    "mongoose": "^5.6.2"
+  }
+}
