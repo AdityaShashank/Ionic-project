@@ -3,7 +3,11 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/places/tabs/discover"></ion-back-button>
     </ion-buttons>
-    <ion-title>Place Detail</ion-title>
+    
+        <ion-item *ngFor="let place of loadedPlaces.slice(0)">
+        <ion-title>  {{ place.title[0] }} </ion-title>
+           </ion-item>
+    
   </ion-toolbar>
 </ion-header>
 <ion-content padding>
@@ -11,7 +15,13 @@
     <ion-row>
       <ion-col>
         <ion-card text-center>
-            <ion-title>{{loadedPlaces[0].title}}</ion-title>
+            <ion-item *ngFor="let place of loadedPlaces.slice(1)">
+             <ion-label>
+                <h2>{{ place.title}}</h2>
+                <p>{{ place.description }}</p>
+              </ion-label>
+            </ion-item>
+            
             <ion-button color="primary" margin (click)="onBookPlace()">Book</ion-button>
         </ion-card>
       </ion-col>      
