@@ -11,8 +11,7 @@ export class AuthPage implements OnInit {
 
   constructor(private authService: AuthService, private router: Router) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
   onLogin() {
     this.authService.login();
     this.router.navigateByUrl('/places/tabs/discover');
